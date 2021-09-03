@@ -4,18 +4,15 @@
   "description": "This is a boilerplate for all naked front-end projects.",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
-    "watch:css": "onchange 'src/scss' -- npm run scss",
-    "start": "run-p serve watch:css"
+    "start": "parcel src/index.html -p 3000 --open",
+    "prebuild": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html",
+    "build": "npm run prebuild && npm run build:parcel"
   },
   "author": "Zwe Nyan Toe",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.5",
-    "browsersync": "*",
     "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0"
+    "parcel-bundler": "^1.12.5"
   }
 }

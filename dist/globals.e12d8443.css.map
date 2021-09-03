@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/globals.scss"],"names":[],"mappings":"AAAA,UAEI,SAAU,CACV,QAAS,CAGb,EACI,aAAc,CACd,oBAAqB,CAGzB,EACI,qBAAsB","file":"globals.e12d8443.css","sourceRoot":"../src","sourcesContent":["html,\nbody {\n    padding: 0;\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\n* {\n    box-sizing: border-box;\n}\n"]}
